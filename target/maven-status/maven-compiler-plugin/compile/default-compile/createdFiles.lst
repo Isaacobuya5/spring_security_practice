@@ -1,0 +1,7 @@
+com\pluralsight\conference\controller\RegistrationController.class
+com\pluralsight\conference\ConferenceConfig.class
+com\pluralsight\conference\model\User.class
+com\pluralsight\conference\model\Registration.class
+com\pluralsight\conference\controller\GreetingController.class
+com\pluralsight\conference\controller\UserController.class
+com\pluralsight\conference\ConferenceApplication.class

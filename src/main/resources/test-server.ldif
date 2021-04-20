@@ -1,0 +1,51 @@
+dn: dc=pluralsight,dc=com
+objectclass: top
+objectclass: domain
+objectclass: extensibleObject
+dc: pluralsight
+
+dn: ou=groups,dc=pluralsight,dc=com
+objectclass: top
+objectclass: organizationalUnit
+ou: groups
+
+dn: ou=subgroups,ou=groups,dc=pluralsight,dc=com
+objectclass: top
+objectclass: organizationalUnit
+ou: subgroups
+
+dn: ou=people,dc=pluralsight,dc=com
+objectclass: top
+objectclass: organizationalUnit
+ou: people
+
+dn: uid=isaac,ou=people,dc=pluralsight,dc=com
+objectclass: top
+objectclass: person
+objectclass: organizationalPerson
+objectclass: inetOrgPerson
+cn: Isaac Obuya
+sn: Obuya
+uid: isaac
+userPassword: $2a$10$kkm9Hga.mlb1TCRBV/0/Ye0a0sZlP0b4Z592K4Q88rbpPIZpjiKPq
+
+dn: cn=developers,ou=groups,dc=pluralsight,dc=com
+objectclass: top
+objectclass: groupOfUniqueNames
+cn: developers
+ou: developer
+uniqueMember: uid=isaac,ou=people,dc=pluralsight,dc=com
+
+dn: cn=managers,ou=groups,dc=pluralsight,dc=com
+objectclass: top
+objectclass: groupOfUniqueNames
+cn: managers
+ou: manager
+uniqueMember: uid=isaac,ou=people,dc=pluralsight,dc=com
+
+dn: cn=submanagers,ou=subgroups,ou=groups,dc=pluralsight,dc=com
+objectclass: top
+objectclass: groupOfUniqueNames
+cn: submanagers
+ou: submanager
+uniqueMember: uid=isaac,ou=people,dc=pluralsight,dc=com
